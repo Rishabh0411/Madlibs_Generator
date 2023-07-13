@@ -18,4 +18,11 @@ for i, char in enumerate(story):
 
 ans = {}
 
+for word in words:
+    answer = input("Enter a word for " + word + ": ")
+    ans[word] = answer
 
+for word in words:
+    story = story.replace(word, ans[word])
+
+print(story)
